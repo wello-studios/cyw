@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'pretendard'; 
+  margin: 0;
+  font-size: 16px;
+}
+body {
+  font-size: 16px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  background-color: #191919;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+
+/* 컨테이너 */
+
+div.main {
+  height: 100vh;
+  width: 100%;
+  background-color: #333031;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div.buttons {
+  padding-top: 2em;
+  display: flex;
+  align-items: center;
+}
+div.con1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80vh;
+  background-color: #191919;
+}
+div.con3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80vh;
+  background-color: #191919;
+}
+div.con2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 20vh;
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ff7f7f 100%);
+}
+
+/* 버튼 */
+
+button.inviteBtn {
+  background-color: #1b1a1a;
+  border: none;
+  border-radius: .8em;
+  padding: .7em 3em;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+button.inviteBtn:hover {
+  background-color: #ff7f7f;
+}
+
+button.fobtn {
+  background-color: transparent;
+  border: white 1.3px solid;
+  border-radius: .8rem;
+  padding: .7rem 3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+button.inviteHeaderBtn {
+  background-color: #ff7f7f;
+  border: none;
+  border-radius: .5em;
+  padding: .5em 1.3em;
+  font-size: 1em;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+button.inviteHeaderBtn:hover {
+  background-color: #ffa7a7;
+}
+
+button.nheaderBtn {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-radius: .5rem;
+  padding: .5rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+button.nheaderBtn:hover {
+  background-color: rgba(126, 126, 126, 0.3);
+}
+
+/* 헤더 */
+header {
+  width: 100%;
+  position: fixed;
+  color: white;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerDiv {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerBtns {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.headerTitleContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerTitle {
+  color: #e7e7e7;
+  font-size: 1.3em;
+}
+.headerIcon {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+/* 푸터 */
+footer {
+  width: 100%;
+  height: 10rem;
+  color: white;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+.footerDiv a {
+  color: white;
+}
+.footerIcon {
+  width: 2rem;
+  height: 2rem;
+}
+.teamLink {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: .5rem 1.3rem;
+  background: transparent;
+  border-radius: .5rem;
+  transition: all .2s ease-in-out;
+}
+.teamLink:hover {
+  background-color: #242424;
+}
+.pol {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.pol a:hover {
+  color: #ff7f7f;
+}
+/* 타이틀, 이미지, 아이콘 */
+
+.title{
+  font-size: 5em;
+  font-weight: 700;
+  color: #e7e7e7;
+}
+
+.discordtitle {
+  font-size: 2.5em;
+}
+
+.subtitle{
+  padding-top: 0em;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #e7e7e7;
+}
+
+.icon {
+  width: 13em;
+  height: 13em;
+}
+
+.commandTitle {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #ff7f7f;
+}
+.commandSubTitle {
+  padding-top: 1rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #e7e7e7;
+}
+.imgClass {
+  width: 30rem;
+  height: 30rem;
+}
+
+
+/* 기타 */
+
+.con2{
+  width: 100%;
+  height: 7rem;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #d1dfd7 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  transition: all 0.3s ease;
+}
+.con2 a {
+  font-size: 1.4rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+.con2 a:hover{
+  transform: scale(1.1);
+}
+
+
+/* 모바일 */
+
+@media (max-width: 1000px) {
+  * {
+    font-size: 10px;
+  }
+  
+  div.con1 {
+    flex-direction: column;
+  }
+  div.con3 {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    height: 20rem;
+  }
+  .footerDiv {
+    flex-direction: column-reverse;
+  }
+  .pol {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  div.main {
+    font-size: 16px;
+  }
+  .icon {
+    font-size: 16px;
+  }
+  button.inviteBtn {
+    font-size: 16px;
+  }
+  div.buttons {
+    padding-top: 1.5em;
+  }
+
+  header {
+    overflow: hidden;
+    height: 8em;
+  }
+  .headerTitleContent {
+    font-size: 10px;
+  }
+  .headera {
+    font-size: 10px;
+  }
+  .headerIcon {
+    font-size: 16px;
+  }
+  .headerTitle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  button.nheaderBtn {
+    display: none;
+  }
+  .headerBtns {
+    gap: 0rem;
+  }
+  button.inviteHeaderBtn {
+    font-size: 16px;
+  }
+
+  .discordtitle {
+    font-size: 15px;
+  }
+  div.con2 {
+    height: 13rem;
+  }
+}
